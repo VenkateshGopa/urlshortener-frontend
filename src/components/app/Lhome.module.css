@@ -1,0 +1,87 @@
+.form {
+  border-radius: 6px;
+  display: flex;
+  border: 2px solid rgba(156, 156, 156, 0.603);
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+}
+.form:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2px 0px;
+  border: none;
+}
+
+.form input {
+  border: none;
+  width: 100%;
+  padding: 8px;
+  margin: 8px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  padding: 0px 15px;
+  color: white;
+  background-color: rgb(10, 10, 238);
+}
+.form button:hover {
+  cursor: pointer;
+  background-color: rgba(10, 10, 238, 0.750);
+}
+.form button:disabled {
+    cursor: progress;
+    background-color: rgb(212, 212, 212);
+}
+.formdiv {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 50px;
+}
+.Lhome {
+  min-height: 91vh;
+  position:absolute;
+  top: 9vh;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cardsdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  margin: 1px solid rgb(187, 187, 187);
+  width: 95%;
+}
+
+@media screen and (max-width:600px) {
+    .cardsdiv{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 ;
+    }
+    .formdiv{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1000px) {
+    .cardsdiv{
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+}

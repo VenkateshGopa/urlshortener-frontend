@@ -1,0 +1,14 @@
+.p404{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.notfound{
+    font-size: 50px;
+    margin: 0;
+}
+.notfounddiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

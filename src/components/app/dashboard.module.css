@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(10, 10, 238);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.brand p {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin: 10px 25px;
+}
+.buttons p {
+  color: white;
+  font-size: 20px;
+  transform: rotate(90deg);
+  margin: 13px;
+}
+.buttons p:hover {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+/* -------------------------------------------------- */
+
+.left {
+  width: 0%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0px;
+  height: 100vh;
+  float: left;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.closebtn {
+  margin-left: 85%;
+}
+.left ul li {
+  color: #818181;
+  list-style: none;
+  padding: 11px 8px;
+  font-size: 20px;
+}
+.left ul {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.left ul li a {
+  color: #818181;
+  text-decoration: none;
+  font-size: 18px;
+}
+.left ul li a:hover,
+.left ul li a:active,
+.left ul li a.active {
+  color: rgb(245, 166, 20);
+}
+.lefth {
+  width: 30%;
+}
+
+@media screen and (max-width: 580px) {
+    .left ul li a {
+      font-size: 11px;
+    }
+    .left ul li {
+      padding: 1px;
+    }
+    .lefth {
+      width: 45%;
+    }
+    .closebtn{
+      margin-left: 75%;
+    }
+  }

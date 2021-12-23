@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.footer{
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand{
+    font-family: 'Lobster', cursive;
+    color:  rgb(196, 193, 193);
+    font-size: 35px;
+    margin: 30px;
+}
+.message{
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 0px;
+    font-size: 14px;
+    color: rgb(156, 155, 155);
+}
+.logo{
+    color: white;
+    background-color:  rgb(196, 193, 193);
+    padding: 7px 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.icons i{
+    margin: 20px 10px;
+    color:rgb(139, 136, 136);
+}
+.icon i:hover{
+    color: black;
+}
+.copyrights{
+    text-align: center;
+    color:rgb(133, 132, 132);
+    margin: 8px;
+}

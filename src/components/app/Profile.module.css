@@ -1,0 +1,60 @@
+.div{
+    background-color: rgb(236, 236, 236);
+    width: 60%;
+    top:9vh;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 18%;
+    padding: 25px 20px;
+    border-radius: 5px;
+}
+.field{
+    display: flex;
+    flex-direction: row;
+}
+.name{
+    font-weight: bold;
+    width: 25%;
+}
+.form label{
+    display: block;
+    padding: 5px 0;
+}
+.form input{
+    margin-bottom: 5px;
+}
+.form button{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+    padding: 3px 20px;
+}
+.form button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.form button:disabled{
+    cursor: progress;
+    background-color: rgb(156, 156, 156);
+}
+
+@media screen and (max-width:450px ) {
+    .div{
+        width:80%;
+        margin-left: 4%;
+    }
+    .name ,.value{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:451px ) and (max-width:606px ){
+    .name ,.value{
+        font-size: 14px;
+    }
+    .name{
+        width:30%
+    }
+}

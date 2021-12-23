@@ -1,0 +1,112 @@
+.div {
+  border-radius: 5px;
+  border:1px solid rgb(151, 151, 151);
+  width: 85%;
+  padding: 12px;
+  margin: 15px auto;
+  background-color: white;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 5px;
+}
+.top a{
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+}
+.top a:hover{
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+}
+.div hr{ 
+    color:rgb(151, 151, 151);
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 5px;
+}
+.bottom a{
+    text-decoration: none;
+    color: rgb(226, 19, 19);
+}
+.bottom a:hover{
+    text-decoration: none;
+    color: rgb(19, 50, 228);
+}
+.button{
+    border: 1px solid rgb(19, 50, 228);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(19, 50, 228);
+    background-color: white;
+}
+/* .button:hover{
+    background-color: rgb(19, 50, 228);
+    color: white;
+    cursor: pointer;
+} */
+.date{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 174, 174);
+    color: rgb(177, 174, 174);
+}
+.button span{
+    background-color: rgb(19, 50, 228);
+    color: white;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 4px;
+    margin-right:5px ;
+    border: 2px solid white;
+}
+.title{
+    margin-top: 10px;
+}
+.delete{
+    border: none;
+    background-color: rgb(180, 27, 27);
+    color: white;
+    padding:10px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.delete:hover{
+    cursor: pointer;
+    background-color: rgba(175, 22, 22, 0.63);
+}
+
+@media screen and (max-width:400px) {
+    .delete{
+        color: red;
+        background-color:white;
+        padding: 5px ;
+    }
+    .date,.title , .top a, .bottom a, .button, .button span{
+        font-size: 10px;
+    }
+    .button {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:550px) {
+    .delete{
+        color: red;
+        background-color:white;
+        padding: 5px ;
+    }
+    .date,.title , .top a, .bottom a, .button, .button span{
+        font-size: 12px;
+    }
+    .button {
+        padding: 5px 10px;
+    }
+
+}

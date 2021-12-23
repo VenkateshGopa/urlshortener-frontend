@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.form {
+  border-radius: 6px;
+  display: flex;
+  border: 2px solid rgba(156, 156, 156, 0.603);
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 70%;
+}
+.form:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2px 0px;
+  border: none;
+}
+
+.form input {
+  border: none;
+  width: 100%;
+  padding: 8px;
+  margin: 8px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  padding: 0px 15px;
+  color: white;
+  background-color: rgb(10, 10, 238);
+}
+.form button:hover {
+  cursor: pointer;
+  background-color: rgb(10, 10, 238, 0.8);
+}
+
+/* ---------------------------------- */
+.top {
+  background-color: rgb(226, 238, 248);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topdiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 13% 0px 10% 10%;
+}
+.logo p{
+    font-family: 'Lobster', cursive;
+    color:  rgb(10, 10, 238);
+    background-color: rgb(250, 241, 241);
+    padding: 100px 70px;
+    border-radius: 50%;
+    font-size: 35px;
+}
+.logo{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    /* margin-right: 10%; */
+}
+.muted {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.397);
+  margin-bottom: 10px;
+}
+.boldmessage {
+  font-size: 50px;
+  color: rgba(0, 0, 0);
+  font-weight: bold;
+  margin: 0px;
+}
+.medmutet {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.597);
+  margin-top: 10px;
+}
+
+.button {
+  display: flex;
+}
+
+.button button {
+  border: none;
+  border: 2px solid rgb(10, 10, 238);
+  border-radius: 4px;
+  background-color: rgb(226, 238, 248);
+  padding: 10px 45px;
+  margin: 10px 10px;
+}
+.button button:hover {
+  background-color: rgb(10, 10, 238);
+  color: white;
+}
+.formdiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.heading {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.message {
+  font-size: 18px;
+  padding: 0 10%;
+  color: rgba(0, 0, 0, 0.514);
+  text-align: center;
+}
+/* ------------------------------------ */
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.d {
+  border: 1px solid rgba(0, 0, 0, 0.438);
+  border-radius: 6px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.d:hover {
+  border: 1px solid rgb(10, 10, 238);
+}
+.dmessage {
+  font-size: 15px;
+  padding: 0% 20%;
+}
+.dheading {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.d button {
+  color: rgb(10, 10, 238);
+  border: 1.5px solid rgb(10, 10, 238);
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px 60px;
+}
+
+.d button:hover {
+  background-color: rgb(10, 10, 238);
+  color: white;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+@media screen and (min-width:1051px){
+    .topdiv{
+        padding: 8% 0% 5% 8%;
+    }
+}
+
+@media screen and (min-width:551px) and (max-width:819px){
+    .topdiv{
+        width: 60%;
+        padding: 15% 0% 10% 3%;
+    }
+    .logo{
+        width:40%;
+        margin: 0px;
+    }
+    .logo p{
+        padding: 80px 50px;
+    }
+    .muted{
+        font-size: 15px;
+    }
+    .boldmessage{
+        font-size: 35px;
+    }
+    .medmutet{
+        font-size: 20px;
+    }
+    .button{
+        margin: 0px 10%;
+    }
+    .button button{
+        padding: 7px 25px;
+    }
+    .form , .details{
+        width: 85%;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .message{
+        font-size: 18px;
+    }
+    .dmessage{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .logo{
+        display: none;
+    }
+    .topdiv{
+        width: 100%;
+        padding: 20% 3px 10% 2%;
+    }
+    .muted{
+        font-size: 15px;
+        margin: 10px 10%;
+    }
+    .boldmessage{
+        font-size: 25px;
+        margin: 10px 10%;
+    }
+    .medmutet{
+        font-size: 15px;
+        margin: 10px 10%;
+    }
+    .button{
+        margin: 0px 10%;
+    }
+    .button button{
+        padding: 7px 25px;
+    }
+    .form , .details{
+        width: 90%;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .message{
+        font-size: 18px;
+    }
+    .dmessage{
+        padding: 0px;
+    }
+}

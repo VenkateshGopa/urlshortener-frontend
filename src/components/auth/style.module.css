@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+    margin: 0;
+}
+
+.maindiv{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.brand{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color:  rgb(10, 10, 238);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.fpmessage
+{
+    margin:  0 7%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.692);
+}
+.message {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.bottom{
+    text-align: center;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label{
+    font-size: 20px;
+    color: black;
+    padding-top:20px;
+    padding-bottom: 5px;
+}
+.form input{
+    height: 25px;
+    padding: 8px;
+}
+
+.form button {
+    padding: 8px;
+    margin-top: 15px;
+    background-color: rgb(10, 10, 238);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+}
+.form button:hover{
+    background-color: rgba(10, 10, 238, 0.80);
+    cursor: pointer;
+}
+.form button:disabled{
+    cursor: progress;
+    background-color: rgb(206, 206, 206);
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+.checkbox span{
+    padding-left: 10px;
+}
+.name{
+    display: flex;
+    margin-top: 10px;
+}
+
+.name input{
+    width: 85%;
+}
+.bottom a{
+    text-decoration: none;
+}
+.bottom a:hover{
+    text-decoration:underline;
+}
+
+.error{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(184, 15, 15);
+    margin-bottom: 20px;
+    background-color: rgb(250, 237, 237);
+    border: 1.5px solid rgb(243, 155, 155) ;
+    padding: 10px 0; 
+    border-radius: 5px;
+}
+
+@media screen and (max-width:450px) {
+    .maindiv{
+        width: 97%;
+    }
+    .bottom{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .maindiv{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .maindiv{
+        width: 35%;
+    }
+    
+}

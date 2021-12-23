@@ -11,17 +11,11 @@ const Lhome = () => {
     const navigate = useNavigate();
     const [data, setdata] = useState([]);
     const [clicked , setclicked] = useState(false);
-    const date = window.Date.now()
     useEffect( () =>{
-        fetch();
-    }, [])
-    const fetch = async() =>{
+      const fetch = async() =>{
+        const date = window.Date.now()
         const {data}= await axios.get('http://localhost:3001/short/myUrls',{
         headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
-        cal(data);
-        // setdata(data);
-    }
-    const cal = (data) =>{
         var count=0, last24 = 0, lastmon =0;
         for(let i=0; i<data.length; i++){
             count = count+ data[i].clicked;
@@ -30,7 +24,24 @@ const Lhome = () => {
             if(data[i].date > date -(86400000*30) )
             lastmon = lastmon +1;
         }
-        setdata({count, last24, lastmon, len:data.length})   
+        setdata({count, last24, lastmon, len:data.length})
+      }
+      fetch()
+    }, [])
+    
+    const fetch = async() =>{
+      const date = window.Date.now()
+      const {data}= await axios.get('http://localhost:3001/short/myUrls',{
+      headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
+      var count=0, last24 = 0, lastmon =0;
+      for(let i=0; i<data.length; i++){
+          count = count+ data[i].clicked;
+          if(data[i].date > date -86400000 )
+          last24 = last24 +1;
+          if(data[i].date > date -(86400000*30) )
+          lastmon = lastmon +1;
+      }
+      setdata({count, last24, lastmon, len:data.length})
     }
 
     const submitHandler = async (event) =>{
@@ -45,6 +56,7 @@ const Lhome = () => {
             setshow(true);
             setdetails(`https://localhost:3001/${data.shortid}`);
             setclicked(false)
+            fetch();
         }
         catch{
             setclicked(false);

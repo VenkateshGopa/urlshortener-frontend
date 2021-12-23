@@ -12,7 +12,7 @@ const Activate = ( ) =>{
     setloading(true)
     const fetch = async() => {
     try{
-        await axios.post(`http://localhost:3001/auth/activation`, {id:params.id });
+        await axios.post(`https://tinyurlshortner.herokuapp.com/auth/activation`, {id:params.id });
         setactive("your account is activated click here to login")
         setloading(false)
     }

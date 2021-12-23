@@ -18,7 +18,7 @@ const Login = () =>{
         else
         try{
             setclicked(true);
-            const data = await axios.post('http://localhost:3001/auth/login', details);
+            const data = await axios.post('https://tinyurlshortner.herokuapp.com/auth/login', details);
             localStorage.setItem("loggedin", data.data.token)
             navigation('/home')
         }

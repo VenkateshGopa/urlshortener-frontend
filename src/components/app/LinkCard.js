@@ -6,7 +6,7 @@ const Linkcard = (props) =>{
     const [deletesurl, setdeletesurl] = useState(false)
     const date =  new Date(props.date);
     const deleteurl = async () =>{
-        await axios.get(`http://localhost:3001/short/delete/${props.shortid}`,{
+        await axios.get(`https://tinyurlshortner.herokuapp.com/short/delete/${props.shortid}`,{
         headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
         props.refresh();
     }

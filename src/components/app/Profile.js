@@ -21,7 +21,7 @@ const Profile = () =>{
         fetch();
     },[])
     const fetch = async() =>{
-        const {data}= await axios.get('http://localhost:3001/short/profile',{
+        const {data}= await axios.get('https://tinyurlshortner.herokuapp.com/short/profile',{
         headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
         setprofile(data);
     }
@@ -37,7 +37,7 @@ const Profile = () =>{
         else
         try{
             setclicked(true);
-            await axios.post('http://localhost:3001/short/password', {password:details.password},{
+            await axios.post('https://tinyurlshortner.herokuapp.com/short/password', {password:details.password},{
                 headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
             setvalid(true);
             // navigate('/auth/login')

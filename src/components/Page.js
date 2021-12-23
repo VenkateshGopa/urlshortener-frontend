@@ -8,7 +8,7 @@ const Page = () =>{
     useEffect(() =>{
         const fetch = async() => {
             try{
-                const {data} = await axios.get(`http://localhost:3001/${params.id}`);
+                const {data} = await axios.get(`https://tinyurlshortner.herokuapp.com/${params.id}`);
                 setvalid(data)
                 window.location.assign(data.url)
             }

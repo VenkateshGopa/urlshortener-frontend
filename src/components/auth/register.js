@@ -21,7 +21,7 @@ const Register = () =>{
         else
         try{
           setclicked(true);
-          await axios.post('http://localhost:3001/auth/register', details);
+          await axios.post('https://tinyurlshortner.herokuapp.com/auth/register', details);
           setmodel(true);
         // alert("Email with a link has been sent to your registered email address to activate your account")
         }

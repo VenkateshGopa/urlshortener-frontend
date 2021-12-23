@@ -9,7 +9,7 @@ const Urls = () =>{
         fetch();
     }, [])
     const fetch = async() =>{
-        const {data}= await axios.get('http://localhost:3001/short/myUrls',{
+        const {data}= await axios.get('https://tinyurlshortner.herokuapp.com/short/myUrls',{
         headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
         setdata(data);
     }

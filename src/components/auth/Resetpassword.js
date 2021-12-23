@@ -19,7 +19,7 @@ const Resetpassord = () =>{
         setloding(true)
         const fetch = async() => {
         try{
-            await axios.post(`http://localhost:3001/auth/linkvalid`, {id:params.id , code: params.code, time:date});
+            await axios.post(`https://tinyurlshortner.herokuapp.com/auth/linkvalid`, {id:params.id , code: params.code, time:date});
             setvalid(null)
             setloding(false)
         }
@@ -44,7 +44,7 @@ const Resetpassord = () =>{
         else
         try{
             setclicked(true);
-            await axios.post('http://localhost:3001/auth/Newpassword', {password:details.password , id: params.id });
+            await axios.post('https://tinyurlshortner.herokuapp.com/auth/Newpassword', {password:details.password , id: params.id });
             navigate('/auth/login')
         }
         catch(err){

@@ -22,7 +22,7 @@ const Forgotpassword = () =>{
         else
         try{
             setclicked(true);
-            await axios.post('http://localhost:3001/auth/forgotpassword', {...details , time:date.getTime()});
+            await axios.post('https://tinyurlshortner.herokuapp.com/auth/forgotpassword', {...details , time:date.getTime()});
             setmodel(true);
         }
         catch(err){

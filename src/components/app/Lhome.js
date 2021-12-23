@@ -14,7 +14,7 @@ const Lhome = () => {
     useEffect( () =>{
       const fetch = async() =>{
         const date = window.Date.now()
-        const {data}= await axios.get('http://localhost:3001/short/myUrls',{
+        const {data}= await axios.get('https://tinyurlshortner.herokuapp.com/short/myUrls',{
         headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
         var count=0, last24 = 0, lastmon =0;
         for(let i=0; i<data.length; i++){
@@ -31,7 +31,7 @@ const Lhome = () => {
     
     const fetch = async() =>{
       const date = window.Date.now()
-      const {data}= await axios.get('http://localhost:3001/short/myUrls',{
+      const {data}= await axios.get('https://tinyurlshortner.herokuapp.com/short/myUrls',{
       headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
       var count=0, last24 = 0, lastmon =0;
       for(let i=0; i<data.length; i++){
@@ -50,7 +50,7 @@ const Lhome = () => {
         try{
             setclicked(true)
             const date = window.Date.now();
-            const {data}= await axios.post('http://localhost:3001/short/generate',{url:details, date:date},{
+            const {data}= await axios.post('https://tinyurlshortner.herokuapp.com/short/generate',{url:details, date:date},{
             headers: {'Authorization': `Bearer ${localStorage.getItem('loggedin')}`}});
             setres(data);
             setshow(true);

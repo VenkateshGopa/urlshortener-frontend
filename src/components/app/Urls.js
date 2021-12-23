@@ -22,7 +22,7 @@ const Urls = () =>{
             <Linkcard key ={ele._id}
             tname={ele.tname}
             url={ele.url}
-            surl= {`http://localhost:3001/${ele.shortid}`}
+            surl= {`https://goofy-perlman-361ca1.netlify.app/${ele.shortid}`}
             clicked = {ele.clicked}
             date = {ele.date}
             id ={ele._id}

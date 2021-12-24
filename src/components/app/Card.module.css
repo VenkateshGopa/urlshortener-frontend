@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 20%;
-    height: 30vh;
+    /* height: 30vh; */
     padding: 0 15px;
     border-radius: 5px;
     margin: 5px;
@@ -41,21 +41,15 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:680px) {
     .Card{
         width: 80%;
         height:fit-content;
     }
 }
 
-@media screen and (min-width:801px) and (max-width:1165px) {
+@media screen and (min-width:681px) and (max-width:1000px) {
     .Card{
-        height: 25vh;
-    }
-}
-
-@media screen and (min-width:1166px) and (max-width:2000px) {
-    .Card{
-        height: fit-content;
+        height: 150px;
     }
 }

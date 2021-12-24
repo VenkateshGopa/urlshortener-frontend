@@ -31,7 +31,7 @@ const Linkcard = (props) =>{
           <div>
             <a href={props.surl} target='_blank' rel='noreferrer'>{props.surl}</a>
           </div>
-          <div>
+          <div className={classes.btndiv}>
           <button className={classes.button}><span>{props.clicked}</span>clicks</button>
           <button className={classes.delete} onClick={conform}><i className="fas fa-trash-alt"></i></button>
           </div>

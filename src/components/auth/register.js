@@ -44,7 +44,7 @@ const Register = () =>{
     }
     return(
     <>
-    {model && <Model message='Email with a link has been sent to your registered email address to activate your account' label="Ok" close={close} ok={close}/>}
+    {model && <Model message='Email with a link has been sent to your registered email address to activate your account (do check your spam folder also*)' label="Ok" close={close} ok={close}/>}
       <div className={classes.div}>
         <div className={classes.maindiv}>
             <div>

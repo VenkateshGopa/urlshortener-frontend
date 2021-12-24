@@ -40,7 +40,7 @@ const Forgotpassword = () =>{
     }
     return(
     <>
-    {model && <Model message='Email with a link has been sent to your registered email address to reset your password' label="Ok" close={close} ok={close}/>}
+    {model && <Model message='Email with a link has been sent to your registered email address to reset your password (do check your spam folder also *)}' label="Ok" close={close} ok={close}/>}
     <div className={classes.div}>
         <div className={classes.maindiv}>
             <div>

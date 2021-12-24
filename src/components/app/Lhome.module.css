@@ -46,9 +46,9 @@
   margin-bottom: 50px;
 }
 .Lhome {
-  min-height: 91vh;
-  position:absolute;
-  top: 9vh;
+  min-height: 90vh;
+  position:relative;
+  top: 59px;
   width: 100%;
   background-color: rgb(233, 233, 233);
   display: flex;

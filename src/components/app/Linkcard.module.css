@@ -34,11 +34,13 @@
 .bottom a{
     text-decoration: none;
     color: rgb(226, 19, 19);
+    width: 60%;
 }
 .bottom a:hover{
     text-decoration: none;
     color: rgb(19, 50, 228);
 }
+
 .button{
     border: 1px solid rgb(19, 50, 228);
     padding: 10px 20px;
@@ -94,6 +96,14 @@
     .button {
         padding: 5px 10px;
     }
+    .bottom a{
+        width: 60%;
+    }
+    .btndiv{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (min-width:401px) and (max-width:550px) {
@@ -106,7 +116,20 @@
         font-size: 12px;
     }
     .button {
-        padding: 5px 10px;
+        padding: 7px 10px;
+    }
+    .bottom a{
+        width: 60%;
+    }
+    .btndiv{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (min-width:551px) and (max-width:650px) {
+    .date,.title , .top a, .bottom a, .button, .button span{
+        font-size: 12px;
     }
 
 }

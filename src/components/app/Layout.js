@@ -11,7 +11,7 @@ const Layout = (props) =>{
     }
     const logout = () =>{
       localStorage.removeItem('loggedin')
-      navigate('/dash');
+      navigate('/homelo');
     }
     return(
       <div>

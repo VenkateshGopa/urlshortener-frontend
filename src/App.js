@@ -21,6 +21,7 @@ function App() {
         <Route path='/active/:id' element={<Publicroute><Activate/> </Publicroute>}/>
         <Route path='auth/forgotpassword' element={<Publicroute><Forgotpassword/> </Publicroute>} />
         <Route path='auth/:id/:code' element={<Publicroute><Resetpassord/> </Publicroute>}/>
+        <Route path='/homelo' element={<Navigate replace to='/home'/>} />
         <Route path='/home' element={ <Dashboard/>} />
         <Route path='/myurls' element={<Privateroute><Urls/></Privateroute>}/>
         <Route path='/profile' element={<Privateroute><Profile/></Privateroute>}/>

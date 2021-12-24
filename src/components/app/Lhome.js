@@ -95,7 +95,7 @@ const Lhome = () => {
       <Linkcard key ={res._id}
       tname={res.tname}
       url={res.url}
-      surl= {`http://localhost:3001/${res.shortid}`}
+      surl= {`https://goofy-perlman-361ca1.netlify.app/${res.shortid}`}
       clicked = {res.clicked}
       date = {+res.date}
       id ={res._id}

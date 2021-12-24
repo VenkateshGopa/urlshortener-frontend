@@ -46,7 +46,7 @@
   margin-bottom: 50px;
 }
 .Lhome {
-  height: 90vh;
+  height: 90.5vh;
   position:relative;
   top: 59px;
   width: 100%;
@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow-y: scroll;
 }
 .cardsdiv {
   display: flex;
